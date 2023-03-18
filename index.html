@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contatos</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/569122339e.png" alt="telefone">
+            <h2>Lista de Contatos - EBAC</h2>
+        </header>
+        <section>
+            <span id="qtd-contatos">Total de 0 Contato(s)</span>
+            <button id="add-contato">add +</button>
+        </section>
+        <section id="add_contatos_container">
+            <form id="form-add">
+                <input id="nome" type="text" required placeholder="Nome" />
+                <input id="email" type="email" required placeholder="E-Mail" />
+                <input id="telefone" type="tel" required placeholder="Telefone" />
+                <button id="add-contato-form">Adicionar</button>
+            </form>
+        </section>
+        <div id="error">Esse Telefone já tem na sua lista de contato(s)</div>
+        <table cellspacing="0">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Criado em</th>
+            </tr>
+            <tbody id="lista-telefonica">
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
